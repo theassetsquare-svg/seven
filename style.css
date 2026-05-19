@@ -95,6 +95,25 @@ h2{font-size:22px;margin:0 0 14px;letter-spacing:-.3px}
 
 .last-cta{text-align:center;padding:36px 0}
 .last-cta h2{font-size:20px}
+.last-cta .ps{
+  margin-top:18px;padding:14px 16px;
+  background:var(--bg-2);border:1px dashed var(--line);border-radius:10px;
+  color:#dcdcdc;font-size:14px;text-align:left;
+}
+.last-cta .ps b{color:var(--accent)}
+
+/* Answer Capsule — AI 인용 +40% */
+.answer-capsule{
+  margin:10px 0 16px;padding:12px 14px;
+  background:linear-gradient(135deg, rgba(255,216,77,.08), rgba(255,61,110,.08));
+  border-left:3px solid var(--accent);border-radius:8px;
+  color:#f0f0f0;font-size:15px;line-height:1.55;
+}
+.answer-capsule b{color:var(--accent)}
+
+/* 가이드·팁 섹션 본문 */
+.guide p, .tips p{margin:10px 0;color:#dcdcdc;font-size:15.5px}
+.guide b, .tips b{color:var(--accent)}
 
 .foot{max-width:var(--maxw);margin:0 auto;padding:24px 18px;color:var(--dim);font-size:13px;text-align:center}
 .foot p{margin:6px 0}
