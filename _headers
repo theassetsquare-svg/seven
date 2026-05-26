@@ -17,6 +17,20 @@
   Cache-Control: public, max-age=0, must-revalidate
 /index.html
   Cache-Control: public, max-age=0, must-revalidate
+/booking/*
+  Cache-Control: public, max-age=0, must-revalidate
+/price/*
+  Cache-Control: public, max-age=0, must-revalidate
+/location/*
+  Cache-Control: public, max-age=0, must-revalidate
+/vip/*
+  Cache-Control: public, max-age=0, must-revalidate
+/reviews/*
+  Cache-Control: public, max-age=0, must-revalidate
+/guide/*
+  Cache-Control: public, max-age=0, must-revalidate
+/faq/*
+  Cache-Control: public, max-age=0, must-revalidate
 
 # 정적 자원 — 1주 강캐시 (immutable)
 /style.css

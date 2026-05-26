@@ -2,9 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://seven-97b.pages.dev/</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/" />
@@ -20,4 +21,61 @@
       <image:caption>대전세븐나이트 W.T 원숭이 공식 로고</image:caption>
     </image:image>
   </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/booking/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/booking/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/price/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/price/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/location/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/location/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/vip/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/vip/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/reviews/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/reviews/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/guide/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/guide/" />
+  </url>
+
+  <url>
+    <loc>https://seven-97b.pages.dev/faq/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://seven-97b.pages.dev/faq/" />
+  </url>
+
 </urlset>

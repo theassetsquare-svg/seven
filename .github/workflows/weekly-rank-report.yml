@@ -1,0 +1,73 @@
+name: 주간 검색 노출 리포트
+
+# 매주 월요일 KST 10시 (UTC 01시)
+on:
+  schedule:
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  SITE: seven-97b.pages.dev
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 검색엔진 site: 인덱싱 카운트
+        id: rank
+        run: |
+          set +e
+          REPORT="## 주간 검색 노출 리포트 — $(TZ=Asia/Seoul date +%Y-%m-%d)\n\n"
+          REPORT="${REPORT}**대상 사이트**: ${SITE}\n\n"
+          REPORT="${REPORT}**참고**: site: 쿼리는 인덱싱 진행 상황만 보여줍니다. 실제 순위는 별도 도구(서치콘솔)로 확인.\n\n"
+
+          # Bing site: 검색 결과 카운트
+          BING_COUNT=$(curl -sSL -A "Mozilla/5.0" "https://www.bing.com/search?q=site%3A${SITE}&count=50" | grep -oE 'sb_count[^>]*>[^<]+' | head -1 | grep -oE '[0-9,]+' | head -1)
+          echo "Bing 인덱스 카운트: ${BING_COUNT:-측정실패}"
+          REPORT="${REPORT}### Bing\n"
+          REPORT="${REPORT}- site:${SITE} 인덱싱: **${BING_COUNT:-측정 실패}** 페이지\n\n"
+
+          # DuckDuckGo (Bing 기반 — 참고용)
+          REPORT="${REPORT}### DuckDuckGo (Bing 기반)\n"
+          REPORT="${REPORT}- 참고: https://duckduckgo.com/?q=site%3A${SITE}\n\n"
+
+          # 라이브 사이트 8개 헬스 재확인
+          REPORT="${REPORT}### 8개 페이지 라이브 응답\n"
+          for p in / /booking/ /price/ /location/ /vip/ /reviews/ /guide/ /faq/; do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://${SITE}${p}")
+            REPORT="${REPORT}- \`${p}\` → ${CODE}\n"
+          done
+
+          REPORT="${REPORT}\n### 다음 액션\n"
+          REPORT="${REPORT}- 네이버 서치어드바이저: https://searchadvisor.naver.com\n"
+          REPORT="${REPORT}- 구글 서치 콘솔: https://search.google.com/search-console\n"
+          REPORT="${REPORT}- IndexNow 핑은 매일 자동 발사됨 (daily-freshness.yml)\n"
+
+          echo -e "$REPORT" > /tmp/report.md
+          cat /tmp/report.md
+          echo "report_path=/tmp/report.md" >> $GITHUB_OUTPUT
+
+      - name: 주간 리포트 이슈 발행
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('/tmp/report.md', 'utf8');
+            const today = new Date().toISOString().slice(0,10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `📈 주간 검색 노출 리포트 (${today})`,
+              body: body,
+              labels: ['automation', 'rank-report']
+            });
+
+      - name: 요약 출력
+        run: cat /tmp/report.md >> $GITHUB_STEP_SUMMARY
