@@ -11,7 +11,7 @@ permissions:
   issues: write
 
 env:
-  SITE: seven-97b.pages.dev
+  SITE: w.nolcool.com
 
 jobs:
   report:

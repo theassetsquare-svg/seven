@@ -10,7 +10,7 @@ permissions:
   contents: write   # sitemap.xml 자동 커밋
 
 env:
-  SITE: https://seven-97b.pages.dev
+  SITE: https://w.nolcool.com
   INDEXNOW_KEY: 63ddda7bd582472cbcdcd585babf59de
 
 jobs:
@@ -57,7 +57,7 @@ jobs:
           curl -sS -X POST "https://api.indexnow.org/IndexNow" \
             -H "Content-Type: application/json; charset=utf-8" \
             -d "{
-              \"host\": \"seven-97b.pages.dev\",
+              \"host\": \"w.nolcool.com\",
               \"key\": \"${INDEXNOW_KEY}\",
               \"keyLocation\": \"${SITE}/${INDEXNOW_KEY}.txt\",
               \"urlList\": [
@@ -77,7 +77,7 @@ jobs:
           curl -sS -X POST "https://yandex.com/indexnow" \
             -H "Content-Type: application/json; charset=utf-8" \
             -d "{
-              \"host\": \"seven-97b.pages.dev\",
+              \"host\": \"w.nolcool.com\",
               \"key\": \"${INDEXNOW_KEY}\",
               \"keyLocation\": \"${SITE}/${INDEXNOW_KEY}.txt\",
               \"urlList\": [

@@ -60,4 +60,4 @@ Allow: /
 User-agent: Meta-ExternalFetcher
 Allow: /
 
-Sitemap: https://seven-97b.pages.dev/sitemap.xml
+Sitemap: https://w.nolcool.com/sitemap.xml

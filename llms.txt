@@ -18,14 +18,14 @@
 - 권역: 대전·세종·청주·천안·충청 전역
 
 ## 사이트맵 (페이지 8개)
-- [홈 — 대전세븐나이트 메인](https://seven-97b.pages.dev/): 전체 안내 + 사이트 허브
-- [4인1조 부킹](https://seven-97b.pages.dev/booking/): 라인업 구조, 합석 매칭, 골든타임, 부킹률 200% 팁
-- [주대·가격](https://seven-97b.pages.dev/price/): 요일별 가격, 양주·맥주·VIP룸 옵션, 동조건 최저가
-- [위치·주차](https://seven-97b.pages.dev/location/): 둔산동 갤러리아 도보 5분, 주차장 3곳, 대리·콜택시
-- [VIP룸·단체](https://seven-97b.pages.dev/vip/): 4~12인 프라이빗 룸, 생일·접대·정장단체
-- [실제 후기](https://seven-97b.pages.dev/reviews/): 187건 평점 4.9, 사례별 솔직 후기
-- [처음 가는 분 가이드](https://seven-97b.pages.dev/guide/): 초보 부킹 8단계, 복장·예산·매너
-- [FAQ 30선](https://seven-97b.pages.dev/faq/): 카테고리별 자주 묻는 질문 답변
+- [홈 — 대전세븐나이트 메인](https://w.nolcool.com/): 전체 안내 + 사이트 허브
+- [4인1조 부킹](https://w.nolcool.com/booking/): 라인업 구조, 합석 매칭, 골든타임, 부킹률 200% 팁
+- [주대·가격](https://w.nolcool.com/price/): 요일별 가격, 양주·맥주·VIP룸 옵션, 동조건 최저가
+- [위치·주차](https://w.nolcool.com/location/): 둔산동 갤러리아 도보 5분, 주차장 3곳, 대리·콜택시
+- [VIP룸·단체](https://w.nolcool.com/vip/): 4~12인 프라이빗 룸, 생일·접대·정장단체
+- [실제 후기](https://w.nolcool.com/reviews/): 187건 평점 4.9, 사례별 솔직 후기
+- [처음 가는 분 가이드](https://w.nolcool.com/guide/): 초보 부킹 8단계, 복장·예산·매너
+- [FAQ 30선](https://w.nolcool.com/faq/): 카테고리별 자주 묻는 질문 답변
 
 ## 자주 검색되는 질의 직답
 - "대전세븐나이트 예약" → 010-7770-0869 영탁에게 전화 한 통.

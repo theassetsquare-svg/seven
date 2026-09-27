@@ -1,6 +1,6 @@
 ---
 name: playwright
-description: Drive a real browser via the Playwright MCP server to verify the live site, capture screenshots, audit SEO meta in rendered HTML, test the mobile call-CTA, check OG preview, run accessibility/perf checks against https://seven-97b.pages.dev/. Use when user asks 사이트 확인, 스크린샷, 모바일 미리보기, OG 미리보기, lighthouse, 접속 테스트, 렌더링 확인, playwright.
+description: Drive a real browser via the Playwright MCP server to verify the live site, capture screenshots, audit SEO meta in rendered HTML, test the mobile call-CTA, check OG preview, run accessibility/perf checks against https://w.nolcool.com/. Use when user asks 사이트 확인, 스크린샷, 모바일 미리보기, OG 미리보기, lighthouse, 접속 테스트, 렌더링 확인, playwright.
 ---
 
 # Playwright MCP — 실전 사용 매뉴얼
@@ -11,7 +11,7 @@ description: Drive a real browser via the Playwright MCP server to verify the li
 
 ### 1. 라이브 사이트 시각 확인
 ```
-browser_navigate → https://seven-97b.pages.dev/
+browser_navigate → https://w.nolcool.com/
 browser_wait_for(text="010-7770-0869")
 browser_take_screenshot(filename="live-mobile.png", fullPage=true)
 ```
@@ -38,7 +38,7 @@ browser_evaluate(function="() => ({
 배포된 HTML에 메타가 다 박혔는지 한 번에 확인.
 
 ### 4. OG 미리보기 (카카오톡/페북이 보는 그대로)
-- og.png 자체 확인: `browser_navigate https://seven-97b.pages.dev/og.png` → `browser_take_screenshot`
+- og.png 자체 확인: `browser_navigate https://w.nolcool.com/og.png` → `browser_take_screenshot`
 - 외부 검증: opengraph.xyz, metatags.io 같은 사이트로 이동해 URL 입력해 미리보기 확인
 
 ### 5. 데스크톱 뷰 확인
